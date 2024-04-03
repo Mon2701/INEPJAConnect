@@ -1,0 +1,941 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Estilos originales para pantallas grandes */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1000; 
+}
+
+#logo img {
+    height: 50px;
+    padding: 5px;
+}
+
+#logo span {
+    display: block;
+}
+
+nav#menu ul {
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    font-weight: bold;
+    margin: 0; 
+    padding: 0; 
+}
+
+nav#menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+nav#menu ul li a {
+    text-decoration: none;
+    color: #02056f;
+    font-size: 14px;
+}
+
+nav#menu ul li a:hover {
+    color: #8a8cc3;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Cambiar la dirección de los elementos a columna para pantallas pequeñas */
+    }
+
+    #logo img {
+        height: 40px; 
+        padding: 0; 
+    }
+
+    nav#menu ul {
+        margin-top: 0px; /* Agregar margen superior para separar el menú del logo para pantallas pequeñas */
+        text-align: center; /* Centrar el texto del menú para pantallas pequeñas */
+    }
+
+    nav#menu ul li {
+        display: block; /* Cambiar los elementos de lista a bloques para pantallas pequeñas */
+        margin: 10px 0; /* Ajustar el margen de los elementos de lista para pantallas pequeñas */
+    }
+
+    nav#menu ul li a {
+        font-size: 16px; /* Ajustar el tamaño de fuente del menú para pantallas pequeñas */
+    }
+}
+
+
+.buscador {
+    padding-left: 20rem;
+}
+
+/* Media queries para hacer el estilo responsive */
+@media screen and (max-width: 768px) {
+    .buscador {
+        padding-left: 10rem; /* Ajustar el padding para pantallas medianas */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .buscador {
+        padding-left: 5rem; /* Ajustar el padding para pantallas pequeñas */
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    flex-wrap: wrap; /* Añadido para manejar elementos en varias líneas */
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.enlaces-relacionados h2 {
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    font-weight: bold;
+    color: #2F328A;
+    font-size: 13px;
+    padding-right:10rem; 
+}
+
+.enlaces-relacionados ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0; /* Añadido para eliminar el margen por defecto */
+}
+
+.enlaces-relacionados li {
+    margin-bottom: 5px;
+}
+
+.enlaces-relacionados li a {
+    margin-bottom: 5px;
+    color: rgb(228, 74, 174);
+    text-decoration: none;
+}
+
+.enlaces-relacionados li a:hover {
+    color: #116787;
+}
+
+footer .hr-ags {
+    border: 1px solid #21B4E9;
+    width: 65px;
+    border-top: 1px;
+    margin-left: 0;
+    background: #21B4E9;
+}
+
+/* Media queries para hacerlo responsive */
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Cambia a disposición de columna */
+        align-items: center; /* Centra los elementos */
+        text-align: center; /* Alinea el texto al centro */
+    }
+
+    .enlaces-relacionados h2 {
+        padding-right: 0; /* Elimina el relleno derecho */
+    }
+
+    .enlaces-relacionados li {
+        margin-bottom: 10px; /* Aumenta el espacio entre los enlaces */
+    }
+}
+
+
+body {
+    margin: 0;
+    padding: 0; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2.9rem;
+    background-color: white;
+    width: 100%;
+    padding-left: 20px; /* Añadido un relleno izquierdo */
+    padding-right: 20px; /* Añadido un relleno derecho */
+    box-sizing: border-box; /* Añadido para incluir el relleno en el ancho total */
+}
+
+/* Media queries para hacer el contenedor responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        padding-left: 10px; /* Ajustar el relleno izquierdo para pantallas medianas */
+        padding-right: 10px; /* Ajustar el relleno derecho para pantallas medianas */
+        padding-top: 15rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding-left: 5px; /* Ajustar el relleno izquierdo para pantallas pequeñas */
+        padding-right: 5px; /* Ajustar el relleno derecho para pantallas pequeñas */
+    }
+}
+
+
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem; 
+    width: 90rem;
+}
+
+.image img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: #e6007f;
+    background-size: cover;
+    border-radius: 0px;
+    position: relative;
+    margin: 0 auto; 
+    padding: 0px 16px 0px 50px;
+    padding-top:1rem;
+}
+
+@media screen and (max-width: 992px) {
+    .image {
+        height: 20rem; /* Ajustar la altura para pantallas medianas */
+        width: 80%; /* Ajustar el ancho para pantallas medianas */
+    }
+
+    .image img {
+        padding: 0; /* Eliminar el padding para pantallas medianas */
+        padding-top: 0.5rem; /* Ajustar el padding superior para pantallas medianas */
+    }
+}
+
+
+
+
+.carousel {
+    position: relative;
+    height: 300px;
+    width: 400px;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: carousel 12s infinite;
+    opacity: 0;
+}
+
+.carousel img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.carousel img:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.carousel img:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.carousel img:nth-child(4) {
+    animation-delay: 9s;
+}
+
+@keyframes carousel {
+    0%    { opacity: 0; }
+    8%    { opacity: 1; }
+    33%   { opacity: 1; }
+    41%   { opacity: 0; }
+    100%  { opacity: 0; }
+}
+
+.info {
+    text-align: left; 
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.titulos {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo {
+    width: 45%; 
+}
+
+.container .hr-ags {
+    border: 1px solid #c6ce4c;
+    width: 65px;
+    border-top: 1px;
+    margin-left: 0;
+    background: #c6ce4c;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel {
+        height: 0px; /* Ajustar la altura para pantallas medianas */
+        width: 0%; /* Ajustar el ancho para pantallas medianas */
+        margin: 0 auto; /* Centrar el carousel */
+    }
+
+    .info {
+        padding-left: 2rem; /* Ajustar el padding izquierdo para pantallas medianas */
+        padding-right: 2rem; /* Ajustar el padding derecho para pantallas medianas */
+    }
+}
+
+
+
+
+.info h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #2F328A; 
+    font-size: 15px;
+}
+
+.info p {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(2, 2, 2);
+    padding: 20px;
+    font-size: 16px;
+}
+
+.info h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #2F328A; 
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+.titulopla h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #2F328A; 
+    font-size: 18px;
+    text-align: center;
+}
+
+.titulopla h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(228, 74, 174); 
+    font-size: 14px;
+    text-align: center;
+}
+
+.info-pla p {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(2, 2, 2);
+    padding: 10px;
+    font-size: 16px;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.info-pla h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #2F328A; 
+    font-size: 14px;
+    text-align: left;
+    padding-left: 5rem;
+}
+
+.info-pla li {
+    color: rgb(228, 74, 174);
+    padding: 10px;
+    font-size: 16px;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.info-pla li a {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(2, 2, 2);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .info {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .titulopla h1 {
+        font-size: 16px;
+    }
+
+    .titulopla h2 {
+        font-size: 12px;
+    }
+
+    .info-pla p {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .info-pla h3 {
+        padding-left: 2rem;
+    }
+
+    .info-pla li {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+.container-plaz {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 9rem;
+    padding-right: 9rem;
+}
+
+
+
+.panel {
+    border: 2px solid #2F328A;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: calc(100% / 3 - 20px);
+    height: 285px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.panel:hover {
+    box-shadow: 5px 5px 5px #b1b1bf, 5px 5px 5px #b1b1bf;
+}
+
+.panel img {
+    align-items: center;
+    border-radius: 5px;
+    width: 90%;
+    height: 65%;
+    object-fit: cover;
+}
+
+.panel h1 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(48, 179, 219);
+    font-size: 14px;
+}
+
+.panel a {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.panel a:hover {
+    color: rgb(228, 74, 174);
+}
+
+.panel a::before {
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .container-plaz {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .panel {
+        width: calc(100% - 20px);
+    }
+    .panel h1 {
+        font-size: 12px; 
+    }
+
+    .panel a {
+        font-size: 11px; 
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    width: 60%;
+    padding: 40px;
+}
+
+.contact-form .input-group {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.contact-form .input-control::placeholder {
+    color: black;
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+.contact-form .input-control {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: white;
+    padding: 0 20px;
+    border: 1.5px solid #2F328A;
+    transition: border-color 0.3 ease;
+}
+
+.contact-form .input-control:focus {
+    border-color: #2F328A;
+}
+
+.contact-form textarea.input-control {
+    height: 120px;
+    resize: none;
+    padding-top: 15px;
+}
+
+.contact-info {
+    width: 25%;
+    padding: 70px 30px;
+}
+
+.contact-info-item {
+    margin: 0 0 30px;
+    padding: 0 0 0 20px;
+}
+
+.contact-info-item h3 {
+    font-size: 15px;
+    margin: 0 0 5px;
+    color: #2F328A;
+}
+
+.contact-info-item a {
+    font-size: 14px;
+    margin: 0 0 5px;
+    color: black;
+}
+
+button {
+    font-family: inherit;
+    user-select: none;
+}
+
+.btn {
+    line-height: 1.5;
+    background-color: rgb(228, 74, 174);
+    border: 1px solid rgb(228, 74, 174);
+    padding: 10px 70px;
+    display: inline-block;
+    border-radius: 15px;
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    transition: color 0.3s ease;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgba(240, 142, 206, 0.295);
+    transition: width 0.3s ease;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.img-contact {
+    align-items: center;
+    border-radius: 10px;
+    width: 85%;
+    height: 45%;
+    object-fit: cover;
+    padding-left: 30px;
+}
+
+.contact-logo {
+    align-items: center;
+    width: 22%;
+    height: 15%;
+    object-fit: cover;
+    padding-left: 62rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .contact-form {
+        width: 80%;
+    }
+  
+    .contact-info {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+  
+    .contact-logo {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+
+.about-text {
+    width: 85%;
+    padding-top: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-text {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem; 
+    }
+}
+
+.about-tabs{
+    margin-top: 20px;
+}
+.servicios-tabs .tab-item {
+    padding: 2px 0;
+    background-color: transparent;
+    border: none;
+    text-transform: capitalize;
+    display: inline-block;
+    color: #2F328A;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0 30px 0 0;
+    position: relative;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .servicios-tabs .tab-item {
+        font-size: 16px; /* Reducir el tamaño del texto en pantallas más pequeñas */
+        margin: 0 15px 0 0; /* Reducir el margen entre elementos en pantallas más pequeñas */
+    }
+}
+.servicios-tabs .tab-item:last-child{
+    margin: 0;
+}
+.servicios-tabs .tab-item::before{
+content: '';
+position: absolute;
+left: 0;
+bottom: 0;
+width: 0%;
+height: 1px;
+background-color: rgb(228, 74, 174);
+transition: width 0.3s ease;
+} 
+
+.servicios-tabs .tab-item:hover::before{
+    width: 100%;
+}
+
+.servicios-tabs .tab-item.active::before{
+    width: 100%;
+    background-color:rgb(228, 74, 174);
+}
+
+.servicios-tabs .tab-item.active{
+    color: #2F328A;
+    opacity: 1;
+    cursor: auto;
+}
+.about-text .timeline{
+    position: relative;
+}
+.about-text .timeline::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    top: 0;
+    left: 5px;
+    background-color: #2F328A;
+}
+
+.about-text .tab-content{
+    padding: 40px 0;
+    display:none ;
+}
+.about-text .tab-content.active{
+    display: block;
+}
+.about-text .timeline-item{
+    margin-bottom: 30px;
+    position: relative;
+    padding: 10px 0 0 40px;
+}
+.about-text .timeline-item::before{
+    content: '';
+    position:absolute;
+    height:16px;
+    width: 16px;
+    background-color: #2F328A;
+    left:0;
+    top:20px;
+    border-radius: 50%;
+}
+
+.info-serv p {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(2, 2, 2);
+    padding: 10px;
+    font-size: 16px;
+    
+}
+
+.info-serv h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #2F328A; 
+    font-size: 14px;
+    text-align: left;
+    padding-left: 5rem;
+}
+
+.info-serv li{
+    color: rgb(228, 74, 174);
+    padding: 10px;
+    font-size: 16px;
+    padding-left: 3rem;
+}
+
+.info-serv li a {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(2, 2, 2);
+
+}
+
+.titulo-serv h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #2F328A; 
+    font-size: 15px;
+}  
+
+.titulo-serv h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(228, 74, 174); 
+    font-size: 14px;
+}  
+
+.tarjeta-hab{
+    width: 90%;
+    max-width: 100rem7; 
+    border-radius: 10px;
+    margin:0  auto 15px;
+    padding: 20px;
+    background-color: #414488;
+    border: 1px solid #414488;
+}
+.tarjeta-hab2{
+    width: 90%;
+    max-width: 100rem; 
+    border-radius: 10px;
+    margin:0  auto 15px;
+    padding: 20px;
+    background-color: #c450cf;
+    border: 1px solid #c450cf;
+}
+
+.bar{
+    font-size:  10px;
+}
+.Technical-item-hab {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .titulo-serv h1 {
+        font-size: 14px; /* Reducir el tamaño del título en pantallas más pequeñas */
+    }
+    
+    .titulo-serv h2 {
+        font-size: 13px; /* Reducir el tamaño del subtítulo en pantallas más pequeñas */
+    }
+
+    .tarjeta-hab, .tarjeta-hab2 {
+        width: 95%; /* Reducir el ancho en pantallas más pequeñas */
+        max-width: none; /* Eliminar el máximo ancho */
+        margin: 0 auto 15px; /* Mantener el margen en pantallas más pequeñas */
+    }
+
+    .bar {
+        font-size: 8px; /* Reducir el tamaño de la barra en pantallas más pequeñas */
+    }
+
+    .Technical-item-hab {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajustar el número de columnas en pantallas más pequeñas */
+    }
+}
+
+.info-pre p {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 16px;
+    
+}
+.info-pre2 p {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 16px;
+    
+}
+.info-pre h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255); 
+    font-size: 14px;
+    text-align: left;
+    padding-left: 5rem;
+}
+
+.info-pre li{
+    color: rgb(228, 74, 174);
+    padding: 10px;
+    font-size: 16px;
+    padding-left: 3rem;
+}
+
+.info-pre2 li{
+    color: #414488;
+    padding: 10px;
+    font-size: 16px;
+    padding-left: 3rem;
+}
+.info-pre2 a{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.info-pre  a {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+
+}
+
+.titulo-pre h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255); 
+    font-size: 15px;
+}  
+
+.titulo-pre h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255); 
+    font-size: 16px;
+}  
+ .informacion{
+    width: 60%;
+    padding: 40px;
+ }
+ .img-info{
+    width: 25%;
+    padding: 8rem 0px 0px 40px;
+ }
+
+ 
+ .img-info img{
+    width: 23rem;
+    height: 23rem;
+ }
+
+ .img-info {
+    width: 25%;
+    padding: 8rem 0px 0px 40px;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .img-info {
+        width: 100%;
+        padding: 4rem 0px 0px 0px; /* Reducir el padding en pantallas más pequeñas */
+        text-align: center; /* Centrar la imagen en pantallas más pequeñas */
+    }
+
+    .img-info img {
+        width: 60%; /* Reducir el tamaño de la imagen en pantallas más pequeñas */
+        height: auto; /* Ajustar la altura automáticamente */
+    }
+}
